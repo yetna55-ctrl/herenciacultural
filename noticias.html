@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags SEO Específicos para Posicionamiento en México -->
+    <meta name="description" content="Entérate de las últimas noticias sobre feminismo en México: derechos de las mujeres, igualdad de género, deporte femenino y economía.">
+    <meta name="keywords" content="feminismo en México, derechos de las mujeres en México, igualdad de género en México, violencia de género México, mujeres en la economía mexicana, deporte femenino México, actualidad feminista">
+    <title>Noticias de Feminismo en México | Actualidad, Derechos y Equidad</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación Original (Consistencia con Home) -->
+    <nav class="navbar scrolled" id="navbar" style="background: rgba(252, 250, 249, 1);">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none; padding-top: 5px;">
+                <svg width="250" height="45" viewBox="0 0 250 45" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));">
+                    <g transform="translate(0, 0)">
+                        <path d="M 2 20 Q 22 2 42 20 Q 22 38 2 20 Z" fill="none" stroke="var(--primary)" stroke-width="3"/>
+                        <circle cx="22" cy="20" r="7" fill="var(--secondary)"/>
+                        <line x1="22" y1="27" x2="22" y2="42" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="16" y1="35" x2="28" y2="35" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                    </g>
+                    <text x="54" y="28" font-family="'Playfair Display', serif" font-weight="800" font-size="24" fill="var(--primary)" letter-spacing="0.5">
+                        Herencia <tspan font-family="'Inter', sans-serif" font-weight="400" fill="var(--secondary)">Crítica</tspan>
+                    </text>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#mision">Quiénes Somos</a>
+                <a href="index.html#contenido">Qué Encontrarás</a>
+                
+                <!-- Noticias Menu (Resaltado) -->
+                <div class="nav-item-dropdown">
+                    <a href="noticias.html" class="nav-link-noticias" style="color: var(--primary);">Noticias <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu">
+                        <div class="megamenu-header">Últimas Noticias</div>
+                        <div class="megamenu-grid">
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/marcha.jpg" alt="Congreso debate paridad">
+                                <div>
+                                    <span class="category-badge politica" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #2f80ed;">Política</span>
+                                    <h4>Congreso debate nueva reforma sobre paridad</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/corazones.jpg" alt="Brecha salarial en México">
+                                <div>
+                                    <span class="category-badge economia" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #1f9d55;">Economía</span>
+                                    <h4>Brecha salarial en México se reduce un 2%</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/cultura.jpg" alt="Liga MX Femenil récord">
+                                <div>
+                                    <span class="category-badge deportes" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #FF6B6B;">Deportes</span>
+                                    <h4>Liga MX Femenil rompe récord de asistencia</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="megamenu-footer">
+                            <a href="noticias.html">Ir al portal de noticias →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultura y Eventos Menu -->
+                <div class="nav-item-dropdown">
+                    <a href="eventos-cultura.html" class="nav-link-noticias">Cultura y Eventos <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu" style="width: 350px;">
+                        <div class="megamenu-header" style="margin-bottom: 1rem;">Reporte Especial</div>
+                        <a href="eventos-cultura.html" class="mega-featured-report">
+                            <img src="archivos_multimedia/cultura.jpg" alt="Reporte Especial Cultural">
+                            <div class="mega-featured-content">
+                                <span class="category-badge" style="background: var(--primary); padding: 0.2rem 0.6rem; font-size: 0.65rem; margin-bottom: 0.3rem;">Cultura</span>
+                                <h4>Eventos Culturales y Feminismo en México</h4>
+                            </div>
+                        </a>
+                        <div class="megamenu-footer">
+                            <a href="eventos-cultura.html">Ver más eventos →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#suscribirme" class="btn btn-outline nav-cta">Suscribirme</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal de Noticias -->
+    <main class="news-page container" style="padding-top: 8rem;">
+        
+        <!-- 1. HERO / DESTACADO PRINCIPAL -->
+        <header class="news-hero-main fade-in-up">
+            <!-- Noticia Principal Estelar -->
+            <article class="hero-article-featured">
+                <img src="archivos_multimedia/marcha.jpg" alt="Marcha Feminista en la Ciudad de México">
+                <div class="hero-article-content">
+                    <span class="category-badge nacional">Nacional</span>
+                    <!-- H1 SEO Optimized -->
+                    <h1><a href="#" style="color: white;">Histórica Marcha por los Derechos de las Mujeres en México rompe récords de asistencia</a></h1>
+                    <p>Miles de mujeres alzaron la voz exigiendo igualdad de género en México, justicia en casos de violencia de género y un sistema equitativo. El feminismo en México vive un momento crucial.</p>
+                    <div class="news-meta">
+                        <span><time datetime="2026-03-23">23 de Marzo, 2026</time></span>
+                        <span>• Redacción Nacional</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Noticias de acompañamiento (Tendencias/Virales) -->
+            <aside class="hero-side-news">
+                <h2 class="news-section-title" style="font-size: 1.5rem; margin-bottom: 1rem; border-left-color: var(--accent);">
+                    <span>Tendencias</span>
+                </h2>
+                
+                <article class="side-news-card">
+                    <img src="archivos_multimedia/cultura.jpg" alt="Empoderamiento a través del arte en México">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem;">Opinión</span>
+                        <h3><a href="#">El arte feminista como motor de cambio en zonas rurales mexicanas</a></h3>
+                        <p class="news-meta" style="color: var(--text-muted); font-size: 0.75rem;">Hace 2 horas</p>
+                    </div>
+                </article>
+                
+                <article class="side-news-card">
+                    <img src="archivos_multimedia/corazones.jpg" alt="Apoyo comunitario entre mujeres">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem;">Cultura</span>
+                        <h3><a href="#">Colectivas feministas crean red de apoyo económico en el sur de México</a></h3>
+                        <p class="news-meta" style="color: var(--text-muted); font-size: 0.75rem;">Hace 5 horas</p>
+                    </div>
+                </article>
+
+                <article class="side-news-card">
+                    <img src="archivos_multimedia/grupo_apoyo.png" alt="Inclusión femenina">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem;">Sociedad</span>
+                        <h3><a href="#">Nuevas plataformas digitales para la seguridad de la mujer</a></h3>
+                        <p class="news-meta" style="color: var(--text-muted); font-size: 0.75rem;">Ayer</p>
+                    </div>
+                </article>
+            </aside>
+        </header>
+
+        <!-- 2. BLOQUE DE ÚLTIMAS NOTICIAS -->
+        <section class="latest-news-section fade-in-up" style="animation-delay: 0.2s;">
+            <div class="news-section-title">
+                <span>Últimas Noticias</span>
+            </div>
+            
+            <div class="news-grid-4">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge politica">Política</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Aprobación de la ley">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Congreso debate nueva reforma sobre paridad de género total en gabinetes estatales</a></h3>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-23">Hoy, 10:30 AM</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge economia">Economía</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Liderazgo empresarial">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Brecha salarial en México se reduce un 2% este año, reportan investigadoras de la UNAM</a></h3>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-23">Hoy, 09:15 AM</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge deportes">Deportes</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Fútbol femenil mexicano">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Liga MX Femenil rompe récord de asistencia histórica en liguilla</a></h3>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-22">Ayer</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge nacional">Nacional</span>
+                        <img src="archivos_multimedia/grupo_apoyo.png" alt="Programa apoyo madres">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Más de 10,000 mujeres se unen a los foros de "Derechos de las Mujeres en México"</a></h3>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-22">Ayer</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. CATEGORÍAS PRINCIPALES (SECCIONES PADRE) -->
+        
+        <!-- Categoría: Nacionales -->
+        <section class="category-section mt-4 fade-in-up">
+            <h2 class="news-section-title" style="border-left-color: #4A154B;">
+                <span>Nacionales (Feminismo en México)</span>
+                <a href="#" class="btn-view-more">Ver todas las noticias nacionales →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Nacional</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Activismo en el país">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Violencia de género en México: avances en los centros de justicia para las mujeres</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Un análisis del impacto de los nuevos protocolos de atención jurídica y psicológica a lo largo de la República.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-20">20 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Nacional</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Activismo de mujeres indígenas">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Redes de mujeres indígenas consolidan programa de liderazgo en Oaxaca y Chiapas</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Buscando reivindicar su identidad, las mujeres indígenas impulsan políticas para garantizar sus derechos.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-18">18 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Nacional</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Marcha por la paz">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Colectivas unen fuerzas en el Encuentro Nacional Feminista Mty 2026</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">El feminismo en México sigue unificando agendas intersectoriales en favor de las mujeres mexicanas.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-15">15 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categoría: Deportivas -->
+        <section class="category-section mt-4 fade-in-up" style="animation-delay: 0.1s;">
+            <h2 class="news-section-title" style="border-left-color: #FF6B6B;">
+                <span>Deportivas (Mujeres en el Deporte)</span>
+                <a href="#" class="btn-view-more">Ver todas las deportivas →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #FF6B6B;">Deportes</span>
+                        <img src="assets/hero_feminist_activism.png" alt="Futbol femenino México">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Histórica victoria de la Selección Femenil Mexicana en Copa Internacional</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Las mujeres deportistas mexicanas siguen dejando en alto el deporte femenino de nuestro país.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-19">19 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #FF6B6B;">Deportes</span>
+                        <img src="assets/community_illustration.png" alt="Atletas olímpicas en México">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Se incrementan los patrocinios enfocados en atletas olímpicas rumbo a 2028</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Marcas nacionales buscan acortar la brecha de género en el deporte mexicano.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-17">17 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #FF6B6B;">Deportes</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Iniciativas deportivas comunitarias">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Programa de empoderamiento a través del boxeo llega a colonias marginales</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Una iniciativa liderada por ex campeonas mundiales brinda autodefensa a la comunidad.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-14">14 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categoría: Economía -->
+        <section class="category-section mt-4 fade-in-up" style="animation-delay: 0.1s;">
+            <h2 class="news-section-title" style="border-left-color: #1f9d55;">
+                <span>Economía (Impacto y Liderazgo)</span>
+                <a href="#" class="btn-view-more">Ver todas las noticias económicas →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Economía</span>
+                        <img src="archivos_multimedia/grupo_apoyo.png" alt="Mujeres en la industria">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Mujeres en la economía mexicana: cómo están revolucionando las PyMEs</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">El impulso del emprendimiento femenino es la gran apuesta para detonar la economía barrial.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-22">22 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Economía</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Trabajo remoto mujeres">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Liderazgo femenino: aumento del 15% de mujeres directivas en el sector tecnológico</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Estudio de consultoras mexicanas avala la eficiencia de equipos con paridad de género.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-21">21 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Economía</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Nuevas regulaciones salariales">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Iniciativas para transparentar y sancionar la brecha salarial en México</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">La nueva ley obliga a empresas grandes a publicar los rangos salariales desagregados por género.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-12">12 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categoría: Política -->
+        <section class="category-section mt-4 fade-in-up" style="animation-delay: 0.1s;">
+            <h2 class="news-section-title" style="border-left-color: #2f80ed;">
+                <span>Política en México</span>
+                <a href="#" class="btn-view-more">Ver todas las noticias políticas →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Política</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Diputadas y senadoras">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">La Agenda Feminista en el Congreso: Nuevas propuestas de cuidados universales</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Reconocer el trabajo de cuidados no remunerado, clave para la equidad estructural.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-20">20 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Política</span>
+                        <img src="assets/hero_feminist_activism.png" alt="Liderazgo en cabildos">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Más gobernadoras y alcaldesas asumen mandatos con gabinetes paritarios</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">La representación importa: mujeres en la política mexicana transforman el estilo de gobernar.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-16">16 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Política</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Ley 3 de 3">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">A un año de la 'Ley 3 de 3': ¿Qué tanto han cumplido los partidos?</a></h3>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.4;">Un repaso a los lineamientos que impiden a violentadores acceder a cargos públicos en México.</p>
+                        <div class="news-card-meta">
+                            <time datetime="2026-03-10">10 Mar 2026</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- 5. NEWSLETTER / CTA FINAL (Conservando consistencia visual) -->
+    <section class="cta-final section-padding" id="suscribirme">
+        <div class="container text-center">
+            <div class="cta-box fade-in-up">
+                <h2>Recibe todas las noticias sobre feminismo en México directamente en tu correo.</h2>
+                <p>Suscríbete a nuestro newsletter gratis y empápate de la actualidad política, económica y deportiva con perspectiva de género.</p>
+                
+                <form class="subscribe-form" id="subscribe-form">
+                    <input type="email" placeholder="Tu correo electrónico" required class="email-input">
+                    <button type="submit" class="btn btn-primary">Suscribirme y mantenerme informada</button>
+                </form>
+                <p class="form-feedback" id="form-feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Original -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Herencia Crítica</h3>
+                    <p>Página feminista de noticias y activismo. Información clara, responsable y con perspectiva de género para todo México.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="Twitter">Tw</a>
+                        <a href="#" aria-label="Telegram">Tg</a>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <a href="#">Aviso de privacidad</a>
+                    <a href="#">Términos de suscripción</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Herencia Crítica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Compartidos -->
+    <script src="script.js"></script>
+</body>
+</html>

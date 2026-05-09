@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags SEO Específicos para el Portal Editorial -->
+    <meta name="description" content="Descubre eventos culturales en México, marchas feministas y exposiciones de arte con enfoque en derechos de las mujeres e igualdad de género.">
+    <meta name="keywords" content="eventos culturales en México, marchas feministas México, exposiciones arte feminista, cultura feminista México, activismo feminista">
+    <title>Eventos culturales en México | Marchas, arte y feminismo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Styles (Reutilizando BEM y Site-System) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-main">
+
+    <!-- Navegación Original con Megamenú Replicado -->
+    <nav class="navbar scrolled" id="navbar" style="background: rgba(252, 250, 249, 1);">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none; padding-top: 5px;">
+                <svg width="250" height="45" viewBox="0 0 250 45" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));">
+                    <g transform="translate(0, 0)">
+                        <path d="M 2 20 Q 22 2 42 20 Q 22 38 2 20 Z" fill="none" stroke="var(--primary)" stroke-width="3"/>
+                        <circle cx="22" cy="20" r="7" fill="var(--secondary)"/>
+                        <line x1="22" y1="27" x2="22" y2="42" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="16" y1="35" x2="28" y2="35" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                    </g>
+                    <text x="54" y="28" font-family="'Playfair Display', serif" font-weight="800" font-size="24" fill="var(--primary)" letter-spacing="0.5">
+                        Herencia <tspan font-family="'Inter', sans-serif" font-weight="400" fill="var(--secondary)">Crítica</tspan>
+                    </text>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#mision">Quiénes Somos</a>
+                <a href="index.html#contenido">Qué Encontrarás</a>
+                
+                <!-- Noticias Menu -->
+                <div class="nav-item-dropdown">
+                    <a href="noticias.html" class="nav-link-noticias">Noticias <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu">
+                        <div class="megamenu-header">Últimas Noticias</div>
+                        <div class="megamenu-grid">
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/marcha.jpg" alt="Congreso debate paridad">
+                                <div>
+                                    <span class="category-badge politica" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #2f80ed;">Política</span>
+                                    <h4>Congreso debate nueva reforma sobre paridad</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/corazones.jpg" alt="Brecha salarial en México">
+                                <div>
+                                    <span class="category-badge economia" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #1f9d55;">Economía</span>
+                                    <h4>Brecha salarial en México se reduce un 2%</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/cultura.jpg" alt="Liga MX Femenil récord">
+                                <div>
+                                    <span class="category-badge deportes" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #FF6B6B;">Deportes</span>
+                                    <h4>Liga MX Femenil rompe récord de asistencia</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="megamenu-footer">
+                            <a href="noticias.html">Ir al portal de noticias →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultura y Eventos Menu (Resaltado) -->
+                <div class="nav-item-dropdown">
+                    <a href="eventos-cultura.html" class="nav-link-noticias" style="color: var(--primary);">Cultura y Eventos <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu" style="width: 350px;">
+                        <div class="megamenu-header" style="margin-bottom: 1rem;">Reporte Especial</div>
+                        <a href="eventos-cultura.html" class="mega-featured-report">
+                            <img src="archivos_multimedia/cultura.jpg" alt="Reporte Especial Cultural">
+                            <div class="mega-featured-content">
+                                <span class="category-badge" style="background: var(--primary); padding: 0.2rem 0.6rem; font-size: 0.65rem; margin-bottom: 0.3rem;">Cultura</span>
+                                <h4>Eventos Culturales y Feminismo en México</h4>
+                            </div>
+                        </a>
+                        <div class="megamenu-footer">
+                            <a href="eventos-cultura.html">Ver más eventos →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#suscribirme" class="btn btn-outline nav-cta">Suscribirme</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="events-page container" style="padding-top: 8rem; padding-bottom: 4rem;">
+        
+        <!-- 🟥 HERO PRINCIPAL (Estilo Editorial Impactante) -->
+        <!-- 🟥 HERO PRINCIPAL (Estilo Editorial Impactante) -->
+        <header class="news-hero-main fade-in-up">
+            <article class="hero-article-featured impact-hero" id="mainHeroCarousel">
+                
+                <!-- SLIDE 1 -->
+                <div class="impact-slide active">
+                    <img src="archivos_multimedia/cultura.jpg" alt="Reportaje de Cultura y Feminismo en México">
+                    <div class="impact-overlay"></div>
+                    <div class="impact-content">
+                        <span class="impact-pretitle">REPORTE CULTURAL</span>
+                        <h1><a href="#">EVENTOS CULTURALES Y FEMINISMO EN MÉXICO</a></h1>
+                        <p>Las exposiciones culturales y marchas feministas que marcan la historia del arte con perspectiva de género.</p>
+                        <div class="impact-meta">Marzo 2026 | Especial de Cultura</div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="impact-slide">
+                    <img src="archivos_multimedia/marcha.jpg" alt="Documental 8M en México">
+                    <div class="impact-overlay"></div>
+                    <div class="impact-content">
+                        <span class="impact-pretitle">DOCUMENTAL ORIGINAL</span>
+                        <h1><a href="#">8M: LA HISTORIA DETRÁS DE LAS MOVILIZACIONES</a></h1>
+                        <p>Un recorrido fotográfico y audiovisual por los contingentes más grandes del país y la fuerza de la sororidad en las calles.</p>
+                        <div class="impact-meta">Próximo estreno | TV 22.1</div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="impact-slide">
+                    <img src="assets/hero_feminist_activism.png" alt="Muralismo y Activismo Urbano">
+                    <div class="impact-overlay"></div>
+                    <div class="impact-content">
+                        <span class="impact-pretitle">EXPOSICIÓN GLOBAL</span>
+                        <h1><a href="#">MURALISMO FEMINISTA Y ARTE URBANO EN LATAM</a></h1>
+                        <p>Desde el centro histórico hasta las periferias, las colectivas de mujeres están tomando los muros públicos para contar sus propias historias.</p>
+                        <div class="impact-meta">Galería Abierta | Todo el mes</div>
+                    </div>
+                </div>
+                
+                <!-- Controles del Carrusel -->
+                <button class="impact-nav prev" id="heroPrevBtn" aria-label="Anterior">❮</button>
+                <button class="impact-nav next" id="heroNextBtn" aria-label="Siguiente">❯</button>
+                <div class="impact-dots" id="heroDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </article>
+
+            <!-- 🔥 TENDENCIAS (Temas Populares Side) -->
+            <aside class="hero-side-news">
+                <h2 class="news-section-title" style="font-size: 1.5rem; margin-bottom: 1rem; border-left-color: #f2994a;">
+                    <span>Tendencias de Hoy</span>
+                </h2>
+                
+                <article class="side-news-card" style="box-shadow: none; border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem; background: #f2994a;">Popular</span>
+                        <h3><a href="#">La cultura feminista en México reescribe la historia de los museos contemporáneos</a></h3>
+                    </div>
+                </article>
+                
+                <article class="side-news-card" style="box-shadow: none; border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem; background: #f2994a;">Próximamente</span>
+                        <h3><a href="#">Todas las marchas feministas 2026: Puntos de partida en el interior de la república</a></h3>
+                    </div>
+                </article>
+
+                <article class="side-news-card" style="box-shadow: none; border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="side-news-content">
+                        <span class="category-badge tendencia" style="font-size: 0.65rem; padding: 0.2rem 0.5rem; margin-bottom: 0.5rem; background: #f2994a;">Imprescindible</span>
+                        <h3><a href="#">Arte y feminismo colectivo: el muralismo creado por manos campesinas</a></h3>
+                    </div>
+                </article>
+            </aside>
+        </header>
+
+        <!-- 🟨 BLOQUE: RECOMENDACIONES DESTACADAS -->
+        <section class="latest-news-section fade-in-up mt-4" style="animation-delay: 0.1s;">
+            <h2 class="news-section-title" style="border-left-color: var(--secondary);">
+                <span>Recomendaciones Destacadas</span>
+            </h2>
+            
+            <div class="news-grid-4">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Marcha</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Marcha feminista cdmx">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Marchas feministas en CDMX: Encuentros Seguros</a></h3>
+                        <div class="news-card-meta" style="font-weight: 600; color: var(--text-main);">
+                            <time datetime="2026-03-28">📅 28 Mar • 📍 CDMX</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Exposición</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Exposiciones arte feminista">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Exposiciones de arte feminista "Voces de la Matria"</a></h3>
+                        <div class="news-card-meta" style="font-weight: 600; color: var(--text-main);">
+                            <time datetime="2026-04-05">📅 5 Abr • 📍 Nacional</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Evento Local</span>
+                        <img src="archivos_multimedia/grupo_apoyo.png" alt="Eventos culturales locales">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Eventos culturales locales: Taller Comunitario en Oaxaca</a></h3>
+                        <div class="news-card-meta" style="font-weight: 600; color: var(--text-main);">
+                            <time datetime="2026-04-12">📅 12 Abr • 📍 Oaxaca</time>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #FF6B6B;">Teatro</span>
+                        <img src="assets/hero_feminist_activism.png" alt="Teatro feminista">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Dramaturgia con visión: Obra teatral "Rompiendo Moldes"</a></h3>
+                        <div class="news-card-meta" style="font-weight: 600; color: var(--text-main);">
+                            <time datetime="2026-04-20">📅 20 Abr • 📍 Monterrey</time>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 🟪 CATEGORÍAS EDITORIALES -->
+
+        <!-- 1. Eventos culturales -->
+        <section class="category-section mt-4 fade-in-up">
+            <h2 class="news-section-title" style="border-left-color: #1f9d55;">
+                <span>1. Eventos culturales en México</span>
+                <a href="#" class="btn-view-more">Cartelera Completa →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Festival</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Festivales culturales">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Festival Iberoamericano de Mujeres en las Artes 2026</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Disfruta de muestras de cine, poesía y música creadas íntegramente por realizadoras emergentes.</p>
+                        <div class="news-card-meta text-muted">📍 Querétaro</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Feria Literaria</span>
+                        <img src="archivos_multimedia/grupo_apoyo.png" alt="Cultura local mexicana">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Feria de Publicaciones Independientes y Fanzines Feministas</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Un encuentro para promover la literatura local producida en la periferia, conectando a nuevas autoras mexicanas.</p>
+                        <div class="news-card-meta text-muted">📍 Puebla</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #1f9d55;">Charla</span>
+                        <img src="assets/community_illustration.png" alt="Conversatorios">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Foro Estatal de Liderazgo Femenino: Retos en el sur de México</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Charlas con lideresas universitarias sobre cómo llevar la cultura de la igualdad de género a zonas rurales.</p>
+                        <div class="news-card-meta text-muted">📍 Mérida</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 2. Marchas y activismo -->
+        <section class="category-section mt-4 fade-in-up" style="animation-delay: 0.1s;">
+            <h2 class="news-section-title" style="border-left-color: #4A154B;">
+                <span>2. Marchas y activismo</span>
+                <a href="#" class="btn-view-more">Movilizaciones Próximas →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Marcha</span>
+                        <img src="archivos_multimedia/marcha.jpg" alt="Protestas y marchas">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Manifestación por los Derechos Laborales de las Madres Trabajadoras</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Organizaciones marcharán exigiendo licencias asimétricas e igualdad salarial desde la base social.</p>
+                        <div class="news-card-meta text-muted">📍 Centro Histórico, CDMX</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Concentración</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Activismo en colectivas">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Vigilia Nacional: Luz por las ausencias y solidaridad comunitaria</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Distintas colectivas llaman al uso de plazas públicas para dignificar la memoria de mujeres víctimas.</p>
+                        <div class="news-card-meta text-muted">📍 Evento Nacional Sincronizado</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #4A154B;">Acompañamiento</span>
+                        <img src="assets/hero_feminist_activism.png" alt="Sororidad comunitaria">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Red Vecinal Feminista convoca a talleres de protección civil y derechos</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Una movilización a nivel barrial buscando fortalecer el activismo feminista base a través del conocimiento.</p>
+                        <div class="news-card-meta text-muted">📍 Toluca</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Exposiciones y arte -->
+        <section class="category-section mt-4 fade-in-up" style="animation-delay: 0.2s;">
+            <h2 class="news-section-title" style="border-left-color: #2f80ed;">
+                <span>3. Exposiciones y arte</span>
+                <a href="#" class="btn-view-more">Directorio de Museos →</a>
+            </h2>
+            <div class="news-grid-3">
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Museos</span>
+                        <img src="archivos_multimedia/cultura.jpg" alt="Arte Feminista en Museos">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">"El Rostro Invisible": Arte feminista textil en el Museo Universitario</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Una profunda reflexión textil creada por artesanas veracruzanas, visibilizando la carga laboral casera.</p>
+                        <div class="news-card-meta text-muted">📍 Xalapa, Veracruz</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Fotografía</span>
+                        <img src="archivos_multimedia/corazones.jpg" alt="Exposición fotográfica cdmx">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Exposición "Memorias de Fuego" en el Centro de la Imagen</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">Documental visual sobre dos décadas de marchas feministas en México por fotoperiodistas destacadas.</p>
+                        <div class="news-card-meta text-muted">📍 CDMX</div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-card-img">
+                        <span class="category-badge" style="background: #2f80ed;">Murales Públicos</span>
+                        <img src="assets/hero_feminist_activism.png" alt="Muralismo social feminista">
+                    </div>
+                    <div class="news-card-content">
+                        <h3><a href="#">Ruta de galerías alternativas y muralismo feminista al aire libre</a></h3>
+                        <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5; flex-grow: 1;">El arte abandona los museos y toma las calles. Un recorrido guiado por expresiones culturales urbanas.</p>
+                        <div class="news-card-meta text-muted">📍 Tijuana</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- 📩 NEWSLETTER CTA (Optimizado SEO Copy & UX CTA) -->
+    <section class="cta-final section-padding" id="suscribirme">
+        <div class="container text-center">
+            <div class="cta-box fade-in-up">
+                <h2>Recibe eventos culturales y noticias de feminismo en México.</h2>
+                <p>No te pierdas ninguna fecha importante. Suscríbete a nuestra agenda nacional y recibe accesos exclusivos y recordatorios de marchas, arte y eventos.</p>
+                
+                <form class="subscribe-form" id="subscribe-form">
+                    <input type="email" placeholder="Tu correo electrónico" required class="email-input" aria-label="Ingresa tu correo para el newsletter cultural">
+                    <button type="submit" class="btn btn-primary">Suscribirme a la agenda</button>
+                </form>
+                <p class="form-feedback" id="form-feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Original -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Herencia Crítica</h3>
+                    <p>Página feminista de noticias y activismo. Información clara, responsable y con perspectiva de género para todo México.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="Twitter">Tw</a>
+                        <a href="#" aria-label="Telegram">Tg</a>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <a href="#">Aviso de privacidad</a>
+                    <a href="#">Términos de suscripción</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Herencia Crítica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Compartidos -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página feminista de noticias y activismo. Información clara, responsable y con perspectiva de género.">
+    <meta name="keywords" content="activismo feminista, noticias con perspectiva de género, página feminista de noticias, eventos feministas, exposiciones, recomendaciones de libros feministas, noticias para mujeres">
+    <title>Herencia Crítica | Noticias y Cultura Feminista</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center; text-decoration: none; padding-top: 5px;">
+                <svg width="250" height="45" viewBox="0 0 250 45" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));">
+                    <!-- Isotipo: El "Ojo Crítico" + Símbolo Feminista -->
+                    <g transform="translate(0, 0)">
+                        <path d="M 2 20 Q 22 2 42 20 Q 22 38 2 20 Z" fill="none" stroke="var(--primary)" stroke-width="3"/>
+                        <circle cx="22" cy="20" r="7" fill="var(--secondary)"/>
+                        <line x1="22" y1="27" x2="22" y2="42" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="16" y1="35" x2="28" y2="35" stroke="var(--secondary)" stroke-width="3" stroke-linecap="round"/>
+                    </g>
+                    <!-- Tipografía del Logo -->
+                    <text x="54" y="28" font-family="'Playfair Display', serif" font-weight="800" font-size="24" fill="var(--primary)" letter-spacing="0.5">
+                        Herencia <tspan font-family="'Inter', sans-serif" font-weight="400" fill="var(--secondary)">Crítica</tspan>
+                    </text>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#mision">Quiénes Somos</a>
+                <a href="index.html#contenido">Qué Encontrarás</a>
+                
+                <!-- Noticias Menu (Restaurado) -->
+                <div class="nav-item-dropdown">
+                    <a href="noticias.html" class="nav-link-noticias">Noticias <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu">
+                        <div class="megamenu-header">Últimas Noticias</div>
+                        <div class="megamenu-grid">
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/marcha.jpg" alt="Congreso debate paridad">
+                                <div>
+                                    <span class="category-badge politica" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #2f80ed;">Política</span>
+                                    <h4>Congreso debate nueva reforma sobre paridad</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/corazones.jpg" alt="Brecha salarial en México">
+                                <div>
+                                    <span class="category-badge economia" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #1f9d55;">Economía</span>
+                                    <h4>Brecha salarial en México se reduce un 2%</h4>
+                                </div>
+                            </a>
+                            <a href="noticias.html" class="mega-card">
+                                <img src="archivos_multimedia/cultura.jpg" alt="Liga MX Femenil récord">
+                                <div>
+                                    <span class="category-badge deportes" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; margin-bottom: 0.4rem; background: #FF6B6B;">Deportes</span>
+                                    <h4>Liga MX Femenil rompe récord de asistencia</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="megamenu-footer">
+                            <a href="noticias.html">Ir al portal de noticias →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultura y Eventos Menu (Minimalista Variante) -->
+                <div class="nav-item-dropdown">
+                    <a href="eventos-cultura.html" class="nav-link-noticias">Cultura y Eventos <span class="dropdown-arrow">▼</span></a>
+                    <div class="megamenu" style="width: 350px;">
+                        <div class="megamenu-header" style="margin-bottom: 1rem;">Reporte Especial</div>
+                        <a href="eventos-cultura.html" class="mega-featured-report">
+                            <img src="archivos_multimedia/cultura.jpg" alt="Reporte Especial Cultural">
+                            <div class="mega-featured-content">
+                                <span class="category-badge" style="background: var(--primary); padding: 0.2rem 0.6rem; font-size: 0.65rem; margin-bottom: 0.3rem;">Cultura</span>
+                                <h4>Eventos Culturales y Feminismo en México</h4>
+                            </div>
+                        </a>
+                        <div class="megamenu-footer">
+                            <a href="eventos-cultura.html">Ver más eventos →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#suscribirme" class="btn btn-outline nav-cta">Suscribirme</a>
+        </div>
+    </nav>
+
+    <!-- 1. Hero / Encabezado principal -->
+    <header class="hero" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-text fade-in-up">
+                <div class="badge">Nuevas perspectivas</div>
+                <h1 style="line-height: 1.1;">
+                    Noticias y cultura<br>
+                    <span style="font-size: 0.55em; font-weight: 500; color: var(--primary-light);">desde una perspectiva feminista</span>
+                </h1>
+                <p class="subtitle">Noticias con perspectiva de género para mujeres y público general. Infórmate, empápate y participa en los temas que importan.</p>
+                <p class="hero-description">Suscríbete a nuestro newsletter y no te pierdas eventos, exposiciones y recomendaciones literarias.</p>
+                
+                <div class="hero-cta-group">
+                    <a href="#suscribirme" class="btn btn-primary pulse-btn">Suscribirme ahora</a>
+                    <span class="subtext">✨ Gratis y directo a tu correo</span>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up" style="animation-delay: 0.2s; position: relative;">
+                <div class="hero-collage">
+                    <div class="collage-item item-1">
+                        <img src="archivos_multimedia/marcha.jpg" alt="Activismo en Marcha">
+                    </div>
+                    <div class="collage-item item-2">
+                        <img src="archivos_multimedia/cultura.jpg" alt="Danza de la Guelaguetza oaxaqueña">
+                    </div>
+                    <div class="collage-item item-3">
+                        <img src="archivos_multimedia/corazones.jpg" alt="Corazones y Apoyo Feminista">
+                    </div>
+                </div>
+                <!-- Blobs decorativos de fondo -->
+                <div class="blur-blob blob-1"></div>
+                <div class="blur-blob blob-2"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Quiénes somos / Nuestra misión -->
+    <section class="about section-padding" id="mision">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in-up">
+                    <h2>Noticias, cultura y activismo feminista en México</h2>
+                    <div class="accent-line"></div>
+                    <p class="lead">Somos un colectivo dedicado a informar y celebrar nuestra herencia con perspectiva de género.</p>
+                    <p>Nuestra misión es acercar al público a noticias claras, análisis profundo y una gran inmersión en nuestra cultura y arte. Queremos que estés informada, empoderada y conectada con tu comunidad.</p>
+                </div>
+                <!-- Visual and quote block to enrich design dynamically -->
+                <div class="about-visual fade-in-up" style="animation-delay: 0.2s; position: relative; padding-bottom: 3rem;">
+                    <img src="assets/hero_feminist_activism.png" alt="Activismo y noticias" style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); width: 100%; object-fit: cover; animation: floating 6s ease-in-out infinite; border: 6px solid white;">
+                    <blockquote class="manifesto-quote" style="position: absolute; bottom: 0; right: 0; width: 85%; padding: 2rem; font-size: 1.3rem; z-index: 5;">
+                        "La información es el primer paso para la transformación."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Qué encontrarás en nuestra página -->
+    <section class="offerings section-padding bg-light" id="contenido">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Qué encontrarás en nuestra página</h2>
+                <p class="section-subtitle">Cada sección está pensada para que te empapes de información confiable y cercana.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <a href="noticias.html" class="feature-card fade-in-up" style="animation-delay: 0.1s; display: block; text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="card-icon">📰</div>
+                    <h3>Noticias y Análisis</h3>
+                    <p>Noticias nacionales e internacionales con un claro enfoque feminista y perspectiva humana.</p>
+                </a>
+                <!-- Card 2 -->
+                <a href="eventos-cultura.html" class="feature-card fade-in-up" style="animation-delay: 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; cursor: pointer;">
+                    <img src="archivos_multimedia/grupo_apoyo.png" alt="Eventos comunitarios" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                    <div class="card-icon" style="margin-bottom: 0.5rem; font-size: 2rem;">🎭</div>
+                    <h3>Eventos y Cultura</h3>
+                    <p style="flex-grow: 1;">Celebra y mantente al tanto de la cultura local, desde eventos emblemáticos como la Guelaguetza, hasta marchas y exposiciones de arte.</p>
+                    <span class="btn-view-more mt-2" style="display: inline-block; font-weight: 600; color: var(--secondary); transition: 0.2s;">Explorar eventos →</span>
+                </a>
+                <!-- Card 3 -->
+                <div class="feature-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="card-icon">📚</div>
+                    <h3>Recomendaciones</h3>
+                    <p>Descubre libros inspiradores y recursos clave para aprender más sobre feminismo.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card-icon" style="font-size: 2.2rem; margin-bottom: 0.8rem;">🎤</div>
+                    <h3>Entrevistas</h3>
+                    <p>Charlas profundas y testimonios directos de mujeres líderes, activistas y creadoras que están transformando la realidad de México.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 fade-in-up" style="animation-delay: 0.5s;">
+                <p class="offerings-footer">Queremos que cada visita a nuestra página sea un paso hacia un mayor entendimiento del feminismo y la actualidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Beneficios y 5. Testimonios (Comunidad) -->
+    <section class="community section-padding" id="comunidad">
+        <div class="container">
+            <div class="community-grid">
+                
+                <!-- Beneficios -->
+                <div class="benefits-col fade-in-up">
+                    <div class="benefits-box">
+                        <h2>Beneficios de suscribirse</h2>
+                        <ul class="benefits-list">
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Recibe noticias y análisis directo a tu correo
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Entérate primero de eventos, exposiciones y actividades culturales
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Recomendaciones literarias y recursos educativos sobre feminismo
+                            </li>
+                            <li>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Mantente informada y conectada con la comunidad
+                            </li>
+                        </ul>
+                        <a href="#suscribirme" class="btn btn-secondary mt-2">Quiero suscribirme</a>
+                    </div>
+                </div>
+
+                <!-- Testimonios -->
+                <div class="testimonials-col fade-in-up" style="animation-delay: 0.2s;">
+                    <img src="assets/community_illustration.png" alt="Comunidad y mujeres en diálogo" class="floating-img" style="margin-bottom: 2rem; max-height: 250px; object-fit: cover;">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">“Gracias a esta página estoy más informada y puedo participar en debates y eventos con conocimiento.”</p>
+                        <p class="author">– Lectora suscrita</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">“Un recurso clave para conocer noticias y reflexionar sobre la igualdad de género de manera accesible y real.”</p>
+                        <p class="author">– Miembro del colectivo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call to Action final -->
+    <section class="cta-final section-padding" id="suscribirme">
+        <div class="container text-center">
+            <div class="cta-box fade-in-up">
+                <h2>Únete a nuestro colectivo de lectoras y lectores informados.</h2>
+                <p>Suscríbete gratis al newsletter y mantente al día con noticias, eventos y recomendaciones pensadas para ti.</p>
+                
+                <form class="subscribe-form" id="subscribe-form">
+                    <input type="email" placeholder="Tu correo electrónico" required class="email-input">
+                    <button type="submit" class="btn btn-primary">Suscribirme y mantenerme informada</button>
+                </form>
+                <p class="form-feedback" id="form-feedback"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Herencia Crítica</h3>
+                    <p>Página feminista de noticias y activismo. Información clara, responsable y con perspectiva de género.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="Twitter">Tw</a>
+                        <a href="#" aria-label="Telegram">Tg</a>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <a href="#">Aviso de privacidad</a>
+                    <a href="#">Términos de suscripción</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Herencia Crítica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
