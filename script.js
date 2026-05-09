@@ -5,8 +5,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Navbar transition on scroll
+    // 1. Navbar transition on scroll & Mobile Menu Toggle
     const navbar = document.getElementById('navbar');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if(mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Cierra el menú al presionar un enlace (para mejor experiencia móvil)
+        const links = navLinks.querySelectorAll('a:not(.nav-link-noticias)');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if(window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    }
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {

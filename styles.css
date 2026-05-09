@@ -1517,3 +1517,120 @@ img {
     margin-top: 0.3rem;
     margin-bottom: 0;
 }
+
+/* ==========================================================================
+   12. Mobile Responsiveness (Media Queries)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Navbar */
+    .mobile-menu-btn {
+        display: block !important;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-main);
+        padding: 1rem 2rem 2rem;
+        box-shadow: var(--shadow-md);
+        gap: 1.5rem;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links .nav-item-dropdown {
+        width: 100%;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding-top: 8rem;
+    }
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    .hero-cta-group {
+        align-items: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-collage {
+        height: 350px;
+    }
+    
+    .item-1 { height: 220px; width: 70%; transform: rotate(-2deg); }
+    .item-2 { height: 180px; width: 50%; top: -10px; transform: rotate(4deg); }
+    .item-3 { height: 160px; width: 55%; transform: rotate(-5deg); }
+    
+    /* Grids */
+    .about-grid, .community-grid, .footer-grid, .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-box {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .manifesto-quote {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        width: 95%;
+    }
+    .manifesto-quote::before { font-size: 4rem; }
+    
+    /* Form */
+    .subscribe-form {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        gap: 1rem;
+    }
+    
+    .email-input {
+        width: 100%;
+        background: white;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .subscribe-form .btn {
+        width: 100%;
+    }
+
+    /* Eventos-Cultura y Noticias */
+    .impact-hero {
+        height: 400px !important;
+    }
+    .impact-content {
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+    .impact-content h1 {
+        font-size: 2rem !important;
+    }
+    .impact-pretitle {
+        font-size: 1rem !important;
+    }
+    
+    /* Pages content top padding */
+    .events-page, .news-page {
+        padding-top: 6rem !important;
+    }
+    .news-grid-4, .news-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
